@@ -21,7 +21,7 @@ export class Triangle implements Figure {
 
     if (sides[2] >= sides[0] + sides[1]) {
       throw new Error(
-        'The longest side must be greater than sum of two others',
+        'The longest side must be less than the sum of the two others',
       );
     }
   }
